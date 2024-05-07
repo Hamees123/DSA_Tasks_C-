@@ -347,7 +347,7 @@ BSTNode* deletenode(BSTNode* node,int todel){
 		
 		BSTNode* temp=min(node->right);
 		node->data=temp->data;
-		   deletenode(temp,todel);
+		  node->right= deletenode(node->right,temp->data);
 		  
 		
 		
