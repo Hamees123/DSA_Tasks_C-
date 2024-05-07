@@ -192,11 +192,13 @@ BSTNode* deletenode(BSTNode* node,int todel){
 		if(node->left==NULL){
 			BSTNode* temp=node->right;
 			free(node);
+			cout<<:" delete successfully";
 			return temp;
 		}
 		else if(node->right==NULL){
 			BSTNode* temp=node->left;
 			free(node);
+			cout<<:" delete successfully";
 			return temp;
 		}
 		
